@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Montgomery Equipment Rental</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+  }
+
+  header {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+    /* Replace this background with a photo of machinery doing a task.
+       Example: background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('images/background.jpg');
+       background-size: cover;
+       background-position: center; */
+  }
+
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  header p a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .equipment-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 15px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .equipment-photo {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    border: 1px solid #bbb;
+  }
+
+  .description {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+  }
+
+  form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+  }
+
+  form textarea {
+    resize: vertical;
+    height: 80px;
+  }
+
+  form button {
+    margin-top: 16px;
+    width: 100%;
+    padding: 10px;
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #444;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MONTGOMERY EQUIPMENT RENTAL</h1>
+  <p>CONTACT: <a href="tel:2052020705">205-202-0705</a></p>
+</header>
+
+<section class="equipment-section">
+  <img class="equipment-photo" src="images/equipment-hero.jpg" alt="Excavator, wheel loader, and heavy equipment for rent">
+</section>
+
+<div class="description">
+  <p>Do you need a quote or rent equipment? Please leave us your contact info: name, phone number, and message.</p>
+</div>
+
+<form>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<footer>
+  &copy; 2026 Montgomery Equipment Rental
+</footer>
+
+</body>
+</html>
