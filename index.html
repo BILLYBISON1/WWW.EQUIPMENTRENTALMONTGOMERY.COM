@@ -130,7 +130,11 @@
   <p>Do you need a quote or rent equipment? Please leave us your contact info: name, phone number, and message.</p>
 </div>
 
-<form>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="8d56acc0-44c8-4225-8c07-37fe3bbd4324">
+  <input type="hidden" name="subject" value="New Lead - Montgomery Equipment Rental">
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
   <label for="name">Name</label>
   <input type="text" id="name" name="name" required>
 
